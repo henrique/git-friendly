@@ -20,9 +20,9 @@ git pull --rebase $remote $branch || exit 1
 
 # Pop any stashed changes
 if [[ "$stash" =~ "No local changes to save" ]]; then
-  echo "* No stashed changes, not popping"
+  echo "* No stashed changes, not pooping"
 else
-  echo "* Popping stash..."
+  echo "* Pooping stash..."
   git stash pop
 fi
 
@@ -32,7 +32,7 @@ git remote prune $remote
 # Bundle em if you got em!
 if which -s bundle; then
   if [ -f Gemfile ]; then
-    bundle check >/dev/null 2>&1 || bundle install
+    bundle check >/dev/null 2>&1 || bundle install --local --path vendor
   fi
 fi
 
