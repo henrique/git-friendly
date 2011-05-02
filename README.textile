@@ -18,13 +18,13 @@ h2. Install
 Run this one-liner, which will checkout the latest code & unpack the scripts into @/usr/local/bin@
 If you don't have write access to @/usr/local/bin@ you'll need to run it as a user who does, eg. root.
 
-pre. bash < <( curl https://github.com/jamiew/git-friendly/raw/master/install.sh)
+pre. bash < <( curl https://github.com/140proof/git-friendly/raw/master/install.sh)
 
 h2. Advanced Install
 
 In case you want to keep things out of @/usr/local/bin@. Checkout the code:
 
-pre. git clone git://github.com/jamiew/git-friendly.git ~/dev/git-friendly
+pre. git clone git://github.com/140proof/git-friendly.git ~/dev/git-friendly
 
 Then add this directory to your PATH:
 
